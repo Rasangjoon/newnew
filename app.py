@@ -35,8 +35,6 @@ def main():
     fig1=px.pie(df, 'brand_name', 'stars_updated')
     st.plotly_chart(fig1)
     
-    
-    
     st.subheader('각 브랜드별 리뷰 점수 분포')
     fig11, ax = plt.subplots(figsize=(12,8))
 
@@ -127,7 +125,7 @@ def main():
         
         # review_month로 그룹화하여 total_score 계산
         monthly_scores = brand_data.groupby('review_month')['total_score'].mean()
-        
+        plt.rcParams['font.family'] = 'NanumGothic'
         # 선 그래프 시각화
         st.line_chart(monthly_scores)
         
@@ -193,7 +191,6 @@ def main():
 
     # Display the line and bar charts in the Streamlit app
     st.altair_chart(line_chart)
-    st.altair_chart(bar_chart)
         
     
     st.subheader('브랜드별 리뷰 스케일링값 검색.')
@@ -225,10 +222,6 @@ def main():
     # brand_name 칼럼 값 추출
     brands = df2['brand_name'].unique()
 
-    # 시각화
-    st.subheader('2022-2023 년도 브랜드 리뷰')
-    
-    st.subheader('브랜드별 최고 리뷰 개수.')
 
 
     
