@@ -68,7 +68,7 @@ kiwisolver==1.4.4
 lxml==4.9.2
 markdown-it-py==2.2.0
 MarkupSafe==2.1.2
-matplotlib==3.7.0
+matplotlib==3.6.1
 matplotlib-inline==0.1.6
 mdurl==0.1.2
 mistune==2.0.4
@@ -117,5 +117,5 @@ python-json-logger==2.0.4
 python-telegram-bot==20.2
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0
-
+seaborn = 
 
