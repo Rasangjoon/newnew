@@ -12,7 +12,6 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import plotly.express as px
 import numpy as np
-import seaborn as sns
 from datetime import datetime
 #1.terminal을 열고 %pip install streamlit을 쳐줍니다.
 #2. 설치가 다 되면 streamlit run app.py를 쳐줍니다. (여기서 app.py는 폴더안에 새로 만든 python 형식 파일입니다.)
@@ -42,7 +41,7 @@ def main():
     brand_names = df.brand_name.unique()
 
     # 색상 설정
-    colors = sns.color_palette("bright", 6)
+    colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"]
 
     # 막대 너비
     bar_width = 0.1
